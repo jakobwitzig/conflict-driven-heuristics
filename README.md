@@ -22,11 +22,11 @@ The repository is organized as follows. CSV data files of all experiments conduc
 The following experiments where conducted:
 ###### Farkas diving:
 * SCIP with default settings (baseline) vs. Farkas diving (`farkasdiving/MMMc_farkasdiving_vs_default_clean.csv`)
-* ...
+* Same as above but w/ and w/o adding solutions and analyzing infeasibility detected during Farkas diving (`farkasdiving/MMMc_farkasdiving_vs_default__nosols__noconfs_clean.csv`)
 
 ###### Conflict diving:
 * SCIP with w/o coefficient diving vs. SCIP w/ coefficient diving (equivalent to SCIP with default settings) vs. SCIP w/o coefficient diving and with conflict diving (`conflictdiving/MMMc_default_coef_conf_clean.csv`)
-* ...
+* Same as above but w/ and w/o adding solutions and analyzing infeasibility during coefficient diving and conflict diving, respectively (`conflictdiving/MMMc_default_coef_conf__noconfs_nosols_clean.csv`)
 
 #### CSV data details
 
@@ -57,6 +57,17 @@ The following instance features are only present for some of the experiments:
 * `FDSols_s` : Number of feasible solutions found by Farkas diving
 * `FDBestSols_s` : Number of improving solutions found by Farkas diving
 * `FDConfs_s`: Number of conflicts found by Farkas diving
+
+###### Conflict diving
+
+* `CoefSols_s` : Number of feasible solutions found by coefficient diving
+* `CoefBestSols_s` : Number of improving solutions found by coefficient diving
+* `CoefConfs_s` : Number of conflicts found by coefficient diving
+* `CoefAvgDepth_s` : Average length of diving paths explored by coefficient diving
+* `ConfSols_s` : Number of feasible solutions found by conflict diving
+* `ConfBestSols_s` : Number of improving solutions found by conflict diving
+* `ConfConfs_s` : Number of conflicts found by conflict diving
+* `ConfAvgDepth_s` : Average length of diving paths explored by conflict diving
 
 [^1]: <witzig@zib.de>
 [^2]: <gleixner@zib.de>
