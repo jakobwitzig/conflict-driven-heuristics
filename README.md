@@ -31,13 +31,15 @@ The following experiments where conducted:
 #### CSV data details
 
 All instance features, e.g., solving time or explored tree nodes, are always given with respect to a setting `s`:
-* `default`
-* `farkasdiving`
-* `farkasdiving-no-confs`
-* `farkasdiving-no-sols`
-* `no-coefdiving`
-* `coefdiving`
-* `conflictdiving-no-coefdiving`
+* `default` : SCIP with default settings
+* `farkasdiving` : SCIP extended by Farkas diving
+* `farkasdiving-no-confs` : SCIP extended by Farkas diving but w/o analyzing infeasibility detected during Farkas diving
+* `farkasdiving-no-sols` : SCIP extended by Farkas diving but w/o adding solutions found during Farkas diving
+* `no-coefdiving` : SCIP w/o coefficient diving
+* `coefdiving` : SCIP w/ coefficient diving (equivalent to `default`)
+* `conflictdiving-no-coefdiving` : SCIP extended by conflict diving but w/o coefficient diving
+* `conflictdiving-no-coefdiving-no-confs` : SCIP extended by conflict diving but w/o coefficient diving but w/o analyzing infeasibility detected during conflict diving
+* `conflictdiving-no-coefdiving-no-sols` : SCIP extended by conflict diving but w/o coefficient diving but w/o adding solutions found during conflict diving
 
 
 All CSV data contains the following columns:
