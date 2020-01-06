@@ -20,11 +20,11 @@ The repository is organized as follows. CSV data files of all experiments conduc
 #### Experiments
 
 The following experiments where conducted:
-##### Farkas diving:
+###### Farkas diving:
 * SCIP with default settings (baseline) vs. Farkas diving (`farkasdiving/MMMc_farkasdiving_vs_default_clean.csv`)
 * ...
 
-##### Conflict diving:
+###### Conflict diving:
 * SCIP with w/o coefficient diving vs. SCIP w/ coefficient diving (equivalent to SCIP with default settings) vs. SCIP w/o coefficient diving and with conflict diving (`conflictdiving/MMMc_default_coef_conf_clean.csv`)
 * ...
 
@@ -33,6 +33,8 @@ The following experiments where conducted:
 All instance features, e.g., solving time or explored tree nodes, are always given with respect to a setting `s`:
 * `default`
 * `farkasdiving`
+* `farkasdiving-no-confs`
+* `farkasdiving-no-sols`
 * `no-coefdiving`
 * `coefdiving`
 * `conflictdiving-no-coefdiving`
@@ -46,6 +48,9 @@ All CSV data contains the following columns:
 * `NQ+100_s` : Relative number of explored tree nodes with a shift of 100
 
 The following instance features are only present for some of the experiments:
+
+###### Farkas diving
+
 * `DivingSolsMax_s` : The maximal number of feasible solutions found by a single diving heuristics. This corresponds to the virtual best diving heuristic w.r.t feasible solutions
 * `DivingConfsMax_s` : The maximal number of conflicts found by a single diving heuristics. This corresponds to the virtual best diving heuristic w.r.t conflicts
 * `DivingBestSolsMax_s` : The maximal number of improving solutions found by a single diving heuristics. This corresponds to the virtual best diving heuristic w.r.t improving solutions
