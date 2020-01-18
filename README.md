@@ -2,12 +2,15 @@
 
 # *Conflict-Driven Heuristics for Mixed Integer Programming*
 
-##### Jakob Witzig[^1] and Ambros Gleixner[^2]
+##### Jakob Witzig and Ambros Gleixner
 
 ###### Zuse Institute Berlin, Takustr. 7, 14195 Berlin
+
+###### <witzig@zib.de> <gleixner@zib.de>
 ___
 
-This online supplement provides tables in CSV format with detailed results of the computational experiments conducted for the paper "Conflict-Driven Heuristics for Mixed Integer Programming" submitted to INFORMS Journal on Computing.
+This online supplement provides tables in CSV format with detailed results of the computational experiments conducted for the paper "Conflict-Driven Heuristics for Mixed Integer Programming".
+A preprint is available as technical repprt published by Zuse Institute Berlin, 2019.
 
 In the experiments, two different ways of combining primal heuristics and conflict analysis were compared to SCIP 6.0.
 
@@ -71,7 +74,17 @@ The following instance features are only present for some of the experiments:
 * `ConfConfs_s` : Number of conflicts found by conflict diving
 * `ConfAvgDepth_s` : Average length of diving paths explored by conflict diving
 
-[^1]: <witzig@zib.de>
-[^2]: <gleixner@zib.de>
+#### How to Cite?
 
-
+```
+@techreport{WitzigGleixner2019,
+  author      = {Jakob Witzig and Ambros Gleixner},
+  title       = {Conflict-Driven Heuristics for Mixed Integer Programming},
+  institution = {ZIB},
+  address     = {Takustr.~7, 14195 Berlin},
+  number      = {19-08},
+  language    = {eng},
+  urn         = {urn:nbn:de:0297-zib-72204},
+  year        = {2019}
+}
+```
