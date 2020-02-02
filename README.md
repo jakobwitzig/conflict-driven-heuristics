@@ -10,7 +10,7 @@
 ___
 
 This online supplement provides tables in CSV format with detailed results of the computational experiments conducted for the paper "Conflict-Driven Heuristics for Mixed Integer Programming".
-A preprint is available as technical repprt published by Zuse Institute Berlin, 2019.
+A preprint is available as technical report published by Zuse Institute Berlin, 2019.
 
 In the experiments, two different ways of combining primal heuristics and conflict analysis were compared to SCIP 6.0.
 
